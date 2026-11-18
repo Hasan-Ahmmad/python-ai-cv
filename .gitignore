@@ -1,0 +1,6 @@
+# vs code
+.vscode/
+
+# Compiled files
+*.exe
+output/
