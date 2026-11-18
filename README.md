@@ -1,3 +1,3 @@
 # Purpose
 
-python for ai and relted field
+python for ai and related field
