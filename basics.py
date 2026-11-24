@@ -1,65 +1,73 @@
-# # # # # largest among three
+# largest among three
 
-# # # # # a = int(input("Enter first number: "))
+# a = int(input("Enter first number: "))
 
-# # # # # b = int(input("Enter second number: "))
+# b = int(input("Enter second number: "))
 
-# # # # # c = int(input("Enter third number: "))
+# c = int(input("Enter third number: "))
 
-# # # # # if a>=b and a>=c:
-# # # # #     print(a, "is largest")
-# # # # # elif b>=a and b>=c:
-# # # # #     print(b, "is largest")
-# # # # # else:
+# if a>=b and a>=c:
+#     print(a, "is largest")
+# elif b>=a and b>=c:
+#     print(b, "is largest")
+# else:
     
-# # # # #     print(c, "is largest")
+#     print(c, "is largest")
 
 
 
 
-# # # # # time converter
-
-# # # # a = int(input())
-
-# # # # hr = a//3600
-
-# # # # a %= 3600
-
-# # # # min = a//60
-
-# # # # a %= 60
-
-# # # # print("Hours ", hr)
-
-# # # # print("Minutes ",min)
-
-# # # # print("Seconds ", a)
 
 
+# # time converter
 
-# # # # bill calculate
+# a = int(input())
 
-# # # bill = float(input())
+# hr = a//3600
 
-# # # serviceCharge = int(input())
+# a %= 3600
 
-# # # friend = int(input())
+# min = a//60
 
-# # # bill += bill*(serviceCharge/100)
+# a %= 60
 
-# # # print("Bill per each: ", bill/friend)
+# print("Hours ", hr)
+
+# print("Minutes ",min)
+
+# print("Seconds ", a)
 
 
 
 
-# # # leap year
 
-# # year = int(input())
 
-# # if year%400 ==0 or (year%4 == 0 and year%100 != 0):
-# #     print(year, "is Leap year")
-# # else:
-# #     print(year, "is Not leap year")
+# # bill calculate
+
+# bill = float(input())
+
+# serviceCharge = int(input())
+
+# friend = int(input())
+
+# bill += bill*(serviceCharge/100)
+
+# print("Bill per each: ", bill/friend)
+
+
+
+
+
+# # leap year
+
+# year = int(input())
+
+# if year%400 ==0 or (year%4 == 0 and year%100 != 0):
+#     print(year, "is Leap year")
+# else:
+#     print(year, "is Not leap year")
+
+
 
 
 
@@ -95,3 +103,55 @@
 #     print("Grade: F")
 
 # print("Average: ", average)
+
+
+
+
+
+
+# # divisibility cheak
+
+# num = int(input("enter the number: "))
+
+# cnt1 = cnt2 = cnt3 = cnt4 = 0
+
+# for i in range(1,num+1):
+#     if i%3 == 0:
+#         cnt1 +=1
+#     if i%5 == 0:
+#         cnt2 +=1
+#     if i%3 == 0 and i%5 == 0:
+#         cnt3 +=1
+#     if i%3 != 0 and i%5 !=0:
+#         cnt4 +=1
+    
+# print("by 3:", cnt1)
+# print("by 5:", cnt2)
+# print("by both:",cnt3)
+# print("by none:", cnt4)
+
+
+
+
+
+# collatz sequence
+
+# num = int(input("enter the number: "))
+
+# print(num, end=" ")
+# i = 0
+# while num>1:
+#     if num%2 == 0:
+#         num //=2
+#         i +=1
+#         print(num , end=" ")
+#     else:
+#         num *=3
+#         num +=1
+#         i +=1
+#         print(num, end=" ")
+
+# print()
+# print("steps:", i)
+
+
