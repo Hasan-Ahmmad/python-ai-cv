@@ -1,25 +1,57 @@
-a = input("Enter a sentece: ")
+# string operation on sentece
 
-a = a.strip().lower()
+# a = input("Enter a sentece: ")
 
-word = a.split()
+# a = a.strip().lower()
 
-cnt1 = len(word)
+# word = a.split()
 
-a = a.replace(" ","")
+# cnt1 = len(word)
 
-cnt2 = len(a)
+# a = a.replace(" ","")
 
-longest = word[0]
+# cnt2 = len(a)
 
-for x in word:
-    if len(x) > len(longest):
-        longest = x
+# longest = word[0]
 
-print(a)
+# for x in word:
+#     if len(x) > len(longest):
+#         longest = x
 
-print("Number of word:", cnt1)
+# print(a)
 
-print("Number of character:", cnt2)
+# print("Number of word:", cnt1)
 
-print("Longest word:", longest)
+# print("Number of character:", cnt2)
+
+# print("Longest word:", longest)
+
+
+
+
+
+
+# substring operation
+
+a = input("Enter the string: ")
+
+L = int(input("first integer:"))
+
+R = int(input("Seconf integer:"))
+
+b = a[L:R]
+
+print("substring from l to r:", b)
+
+print("first three char:", a[:3])
+
+print('last three char:', a[-3:])
+
+c = a[::-1]
+
+print("reverse string:", c)
+
+d = a[::2]
+
+print(d)
+
