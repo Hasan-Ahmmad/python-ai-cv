@@ -1,4 +1,4 @@
-# largest among three
+# # largest among three
 
 # a = int(input("Enter first number: "))
 
@@ -134,7 +134,7 @@
 
 
 
-# collatz sequence
+# # collatz sequence
 
 # num = int(input("enter the number: "))
 
@@ -160,13 +160,65 @@
 
 # euclidean distance
 
-import math
+# import math
 
-x1 = int(input())
-x2 = int(input())
-y1 = int(input())
-y2 = int(input())
+# x1 = int(input())
+# x2 = int(input())
+# y1 = int(input())
+# y2 = int(input())
 
-print(math.sqrt((x1-x2)**2 + (y1-y2)**2))
+# print(math.sqrt((x1-x2)**2 + (y1-y2)**2))
 
+
+
+
+
+# basic calculator
+
+flag = True
+
+while flag:
+    num1 = int(input("Enter number 1: "))
+    num2 = int(input("Enter number 2: "))
+
+    op = input("enter the operator:")
+
+    if op == "+":
+        print(num1+num2)
+
+    elif op == "-":
+        print(num1-num2)
+
+    elif op == "*":    
+        print(num2*num1)
+
+    elif op == "/":
+
+        if num2 == 0:
+            print("invalid division")
+            while num2 == 0:
+                num2 = int(input("enter number 2 again: "))
+
+        print(num1/num2)
+
+    elif op == "%":
+        if num2 == 0:
+            print("invalid modulo")
+            while num2 == 0:
+                num2 = int(input("enter number 2 again: "))
+
+        print(num1%num2)
+
+    elif op == "**":
+        print(num1**num2)
+
+    else:
+        print("Invalid operator")
+
+    user = input("do you wan to continue more calculation? ")
+
+    if user.lower() == "no":
+       flag = False 
+
+print("calculation ended")
 
